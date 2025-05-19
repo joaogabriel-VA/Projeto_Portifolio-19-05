@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+body { /*Inclui o Header, main, footer*/
+
+
+    background-color: #000000 ;
+    color: #F6F6F6;
+    height: 100%; /*Essa é a altuma máxima para o brower*/
+}
+    /*header- tag mãe do cabeçalho*/
+    .cabeçalho{
+
+        padding: 2% 0% 0% 8%;/*Distancia do conteudo para a caixa mãe até a caixa nav (top,right, bottom, left)*/
+    }
+
+    /*nav*/
+    .cabeçalho_menu{
+    
+        display: flex; /* */
+        gap: 8%;
+        
+
+    }
+    /*a*/ /*home/currículo*/
+    .cabeçalho_menu_link{ 
+
+        font-family: "Krona One", sans-serif;
+        font-size: 1.5rem; /*24px- A fonte media do browser: 1rem é igual a 16px*/
+        font-weight: 600;
+        color:#F6F6F6; /*Cor do texto*/
+        text-decoration: none;
+        background-color: #000000;
+    }
+
+/*main*/
+.conteudo {  /*container principal*/
+
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:flex-start ; /*Altura*/
+    justify-content: flex-start;/*Largura*/
+    margin: 8% 8%; /* Margem em relação ao body*/
+    gap:20px /*Divisão de subtitulos*/
+   
+  
+}
+.titulo{
+
+    display: flex;
+    font-size: 3rem;
+
+
+}
+
+.subtitulo{
+
+    display: flex;
+    font-size: 1rem;
+    gap:20px
+}
+.dados{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 15px;
+    
+}
+.dados_cabeçalho{   
+    font-size: 2rem;
+    
+}
+
+.dados_cabeçalho_email_celular{
+
+    font-size: 1rem; 
+    text-align: justify
+}
+
+.resumo{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 15px;
+
+}
+
+.resumo_cabeçalho{
+    font-size: 2rem;
+
+
+}
+
+.resumo_cabeçalho_paragrafo{
+    font-size: 1rem;
+    text-align: justify
+    
+}
+
+.formaçao{
+
+display: flex;
+flex-direction: column;
+gap: 15px
+
+}
+.formaçao_cabeçalho{
+    font-size: 2.5rem;
+    
+}
+
+.formaçao_cabeçalho_graduação{
+
+    font-size: 1.5rem;
+    
+}
+
+.formaçao_cabeçalho_graduação_paragrafo{
+    font-size: 1rem; ;
+    text-align: justify
+}
+.formaçao_cabeçalho_tecnico{
+
+    font-size: 1.5rem;
+
+}
+
+.formaçao_cabeçalho_tecnico_paragrafo{
+
+    font-size: 1rem;
+    text-align: justify
+
+}
+
+.formaçao_cabeçalho_escola{
+    font-size: 1.5rem;
+}
+
+.formaçao_cabeçalho_escola_paragrafo{
+
+    font-size: 1rem;
+    text-align: justify
+}
+
+.complementar{
+    display: flex;
+    flex-direction: column;
+    gap: 15px
+    
+
+}
+
+.complementar_cabeçalho{
+
+    font-size: 2.5rem;
+   
+}
+
+
+.complementar_cabeçalho_curso{
+    font-size: 1rem;
+    text-align: justify
+}
+
+
+
+
+
+
+
+
+
+
+.rodape{
+    color: black;
+    background-color:#22d4fd ;
+    padding: 8px; /*Espaçamento entre o texto e as bordas*/
+    font-family: "Krona One", sans-serif;
+    font-size: 1rem ;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    /*Altura= altura da fonte fonte + padding top + padding do fundo*/
+    /*Largura do radape = largura do body*/
+}
+
+@media (max-width: 1024px){
+    .conteudo{
+    
+        flex-direction: column;
+        
+    }
+    
+    .conteudo_esquerda{
+    
+        width: auto;
+    
+    }
+    .conteudo_esquerda_botoes{
+        flex-direction: column;
+        align-items: center;
+    }
+    }
