@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 *{
     margin: 0;
@@ -29,9 +29,11 @@ body { /*Inclui o Header, main, footer*/
     /*a*/ /*home/currículo*/
     .cabeçalho_menu_link{ 
 
-        font-family: "Krona One", sans-serif;
+       font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
         font-size: 1.5rem; /*24px- A fonte media do browser: 1rem é igual a 16px*/
-        font-weight: 600;
+        
         color:#F6F6F6; /*Cor do texto*/
         text-decoration: none;
         background-color: #000000;
@@ -40,6 +42,9 @@ body { /*Inclui o Header, main, footer*/
 /*main*/
 .conteudo {  /*container principal*/
 
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 
     display: flex;
     flex-direction: column;
